@@ -30,7 +30,11 @@ def build_command(datemin,datemax,path,filename):
 
     """
 
-    string ='python -m motuclient --motu http://my.cmems-du.eu/motu-web/Motu --service-id SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047-DGF --product-id dataset-duacs-rep-global-merged-allsat-phy-l4 --date-min ' + datemin + ' --date-max ' + datemax + ' --out-dir ' + path + ' --out-name ' + filename + ' --user cbarbedorocha --pwd rimhy5-zafcAn-pohxim'
+    string ='python -m motuclient --motu http://my.cmems-du.eu/motu-web/Motu
+    --service-id SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047-DGF --product-id
+    dataset-duacs-rep-global-merged-allsat-phy-l4 --date-min ' + datemin + '
+    --date-max ' + datemax + ' --out-dir ' + path + ' --out-name ' + filename +
+    ' --user <USER> --pwd <PASSWORD>'
 
     return string
 
